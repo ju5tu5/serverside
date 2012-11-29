@@ -18,6 +18,7 @@ if(isset($_POST['submit']) && !preg_match( "/[\r\n]/", $_POST['email'] ) ){
 	
 	# Probeer de email te versturen, stop de return waarde in een variabele
 	$versturen_gelukt = mail('j.p.sturkenboom@hva.nl', $subject, $bericht, $headers);
+	$versturen2 = mail($_POST['email'], 'Bedankt voor uw mail', '');
 	
 	# Controleer de variabele, geef een melding aan de gebruiker over het al dan niet slagen van het versturen
 	if($versturen_gelukt) {
