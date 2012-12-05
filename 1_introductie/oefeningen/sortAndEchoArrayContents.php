@@ -49,6 +49,7 @@ function vergelijk_datum($a, $b){
 	if($a_time == $b_time){
 		return 0;
 	}
+
 	return ($a_time > $b_time)? -1 : 1;
 }
 
