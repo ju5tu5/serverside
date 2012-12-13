@@ -42,7 +42,11 @@ those engaged in trying to explain our thought or language will so much as notic
 Although this revolution will be relatively quiet, it should have a significant impact on the way we
 think about ourselves at the most fundamental level.';
 
+
+//$langeTekst = strip_tags($langeTekst);
+//$langeTekst = maak_hyperlinks($langeTekst);
 echo text_to_html($langeTekst, false);
+//echo $langeTekst;
 
 # geef de HTML code voor het sluiten van de pagina weer
 htmlSluiten();
