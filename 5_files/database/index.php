@@ -10,13 +10,14 @@ $link = dbConnect();
 
 $result = $link->query("SELECT * FROM gastenboek");
 
-while($bericht = $result->fetch_object()){
+while($record = $result->fetch_object()){
 
-	echo '
+	echo "
 		<article>
-			<p>'.$bericht->bericht.'</p>
+			<p>".$record->bericht."</p>
 		</article>
-	';
+	";
+
 }
 
 htmlSluiten();
